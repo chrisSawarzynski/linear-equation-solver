@@ -1,0 +1,6 @@
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\bin\Debug\mult_rownania.exe.config
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\bin\Debug\mult_rownania.exe
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\bin\Debug\mult_rownania.pdb
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\obj\Debug\mult_rownania.csprojResolveAssemblyReference.cache
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\obj\Debug\mult_rownania.exe
+C:\Users\Wojtas\Dropbox\programming\mult_rownania\mult_rownania\obj\Debug\mult_rownania.pdb
