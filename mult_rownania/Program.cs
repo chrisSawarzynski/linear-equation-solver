@@ -39,7 +39,8 @@ namespace mult_rownania
             Matrix matrix = new Matrix(array);
 
             //matrix.showMatrix();
-
+            DateTime time = DateTime.Now;
+            
             for (int i = 0; i < n; i++)
             {
                 if(matrix.matrix[i,i]==0)
@@ -54,8 +55,8 @@ namespace mult_rownania
                 matrix.first_to_one(i);
                 for (int j = 0; j < n; j++)
                 {
-                    if(i!=j)
-                    {
+                    //if(i!=j)
+                    //{
                         int index_i = i;
                         int index_j = j;
                         tasks.Add( Task.Factory.StartNew(
@@ -64,11 +65,14 @@ namespace mult_rownania
                                 matrix.calculate(index_i, index_j);
                             }));
                         //matrix.calculate(i, j);
-                    }
+                    //}
                 }
                 Task.WaitAll(tasks.ToArray());
+                tasks.Clear();
             }
-            
+            DateTime time2 = DateTime.Now;
+            Console.WriteLine(time - time2);
+
             Console.WriteLine();
             matrix.showResult();
 

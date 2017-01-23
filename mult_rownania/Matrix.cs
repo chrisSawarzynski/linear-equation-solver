@@ -49,11 +49,15 @@ namespace mult_rownania
 
         public void calculate(int r_base, int r_calc )
         {
-            float calc_base = matrix[r_calc, r_base];
-            for (int i = 0; i < matrix.GetLength(1); i++)
+            if(r_base!=r_calc)
             {
-                matrix[r_calc,i] = matrix[r_calc,i] - calc_base * matrix[r_base,i];
+                float calc_base = matrix[r_calc, r_base];
+                for (int i = 0; i < matrix.GetLength(1); i++)
+                {
+                    matrix[r_calc, i] = matrix[r_calc, i] - calc_base * matrix[r_base, i];
+                }
             }
+            
         }
 
         public void showResult()
