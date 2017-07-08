@@ -23,16 +23,16 @@ namespace mult_rownania
 
             for (int i = 0; i < n; i++)
             {
-                //Console.WriteLine((i + 1) + ". równanie:");
+                Console.WriteLine((i + 1) + ". równanie:");
                 for (int j = 0; j < n+1; j++)
                 {
                     //Console.Write("["+(i+1)+","+(j+1)+"]= ");
-                    /*if (j != n)
+                    if (j != n)
                         Console.Write("Współczynnik przy x" + (j + 1) + "= ");
                     else
                         Console.Write("Wyraz wolny= ");
-                    array[i, j] = int.Parse(Console.ReadLine());*/
-                    array[i, j] = random.Next(0,100);
+                    array[i, j] = float.Parse(Console.ReadLine());
+                    //array[i, j] = random.Next(0,100);
                 }
             }
 
@@ -48,7 +48,10 @@ namespace mult_rownania
                     for (int j = i+1; j < n; j++)
                     {
                         if (matrix.matrix[j, i] != 0)
+                        {
                             matrix.swap_rows(i, j);
+                            break;
+                        }
                     }
                 }
                     
